@@ -1,0 +1,41 @@
+html body {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header h1 {
+    color: #ff4500;
+    font-size: 4rem;
+    margin: 1rem 5rem;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+header .year-number {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ff4500;
+    padding: 0 2rem;
+}
+
+.container {
+    height: 100vh;
+    background: url(https://i.ibb.co/VQ3LHmG/joanna-kosinska-i7q-HTO0-SEM-unsplash.jpg) bottom center;
+    background-size: cover;
+}
