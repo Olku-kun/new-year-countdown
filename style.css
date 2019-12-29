@@ -63,6 +63,7 @@ header .year-number {
     background-color: rgb(10, 10, 27);
     color: white;
     font-size: 5rem;
+    font-weight: 600;
     text-align: center;
     padding-top: 2.5rem;
 }
