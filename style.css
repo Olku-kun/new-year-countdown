@@ -13,7 +13,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 -20px rgb(164, 214, 216);
 }
 
 header h1 {
@@ -35,7 +36,33 @@ header .year-number {
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     background: url(https://i.ibb.co/VQ3LHmG/joanna-kosinska-i7q-HTO0-SEM-unsplash.jpg) bottom center;
     background-size: cover;
+}
+
+.box {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(15, 15, 43, 0.9);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.clock div {
+    margin: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(10, 10, 27);
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2.5rem;
 }
