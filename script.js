@@ -15,7 +15,9 @@ function clock() {
     let i = new Date().getMonth();
     month.innerHTML =  monthNames[i] ;
 }
-
-
-
 let interval = setInterval(clock, 1000);
+
+function playGreetings(e) {
+    const audio = document.querySelector("audio");
+    audio.play();
+    }
