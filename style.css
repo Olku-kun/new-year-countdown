@@ -39,6 +39,7 @@ header .year-number {
     min-height: 100vh;
     background: url(https://i.ibb.co/VQ3LHmG/joanna-kosinska-i7q-HTO0-SEM-unsplash.jpg) bottom center;
     background-size: cover;
+    position: relative;
 }
 
 .box {
@@ -80,4 +81,16 @@ header .year-number {
     font-weight: 600;
     text-align: center;
     padding-top: 2rem;
+    
+}
+button {
+    position: fixed;
+    bottom: 0px;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: #003300;
+    color: #ff4500;
+    border: none;
+    border-radius: 10px;
 }
