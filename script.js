@@ -5,9 +5,9 @@ function clock() {
     let day = document.querySelector('#day');
     let month = document.querySelector('#month');
     let year = document.querySelector('#year');
-    
+
     let h = new Date().getHours();
-    hours.innerHTML = (h < 10) ? `0${h}`: h;
+    hours.innerHTML = (h < 10) ? `0${h}` : h;
 
     let min = new Date().getMinutes();
     minutes.innerHTML = (min < 10) ? `0${min}` : min;
@@ -25,18 +25,48 @@ function clock() {
     let d = new Date().getDate();
     let now = [i, d, y, h, min, sec];
     //[11, 31, 2019, 10, 5, 25]
-    // clockChime();
+    
     let theNow = [11, 31, 2019, 23, 59, 59];
-    if( JSON.stringify(now) == JSON.stringify(theNow)) {
+    let tenSeconds = [11, 31, 2019, 23, 59, 50];
+    if (JSON.stringify(now) == JSON.stringify(tenSeconds)) {
+
+    }
+    if (JSON.stringify(now) == JSON.stringify(theNow)) {
         clockChime();
         playGreetings();
     }
-   
+
 }
 let interval = setInterval(clock, 1000);
+
+// function tenCountDown() {
+//     let countDown = document.querySelector('#countdown');
+//     let count = 10;
+//     while (count >= 0) {
+//         countDown.innerHTML = count;
+//         console.log(count);
+//         count--;
+//     }
+   
+// }
+// let countInterval = setInterval(function() {
+//     let countDown = document.querySelector('#countdown');
+//     let count = 10;
+//     while (count >= 0) {
+//         countDown.innerHTML = count;
+//         console.log(count);
+//         count--;
+//     }
+//    if(count < 0) {
+//        clearInterval(countInterval)
+//    }
+// }, 1000);
+
+
+
 function clockChime() {
-   const chime = document.querySelector('#chime');
-   chime.play();
+    const chime = document.querySelector('#chime');
+    chime.play();
 }
 
 function playGreetings(e) {

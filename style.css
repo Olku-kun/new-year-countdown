@@ -94,3 +94,9 @@ button {
     border: none;
     border-radius: 10px;
 }
+#countdown {
+    display: none;
+    font-size: 15rem;
+    text-align: center;
+    color: rgb(230, 77, 108)
+}
