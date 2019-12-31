@@ -27,12 +27,12 @@ function clock() {
     //[11, 31, 2019, 10, 5, 25]
     
     let theNow = [11, 31, 2019, 23, 59, 59];
-    let tenSeconds = [11, 31, 2019, 23, 59, 50];
+    let tenSeconds = [11, 31, 2019, 23, 59, 48];
     if (JSON.stringify(now) == JSON.stringify(tenSeconds)) {
-
+        clockChime();
     }
     if (JSON.stringify(now) == JSON.stringify(theNow)) {
-        clockChime();
+        
         playGreetings();
     }
 
